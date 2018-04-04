@@ -1,0 +1,831 @@
+@import "../css/fonts";
+
+div
+  box-sizing: border-box  
+
+.section1
+  position: relative
+  background: url(../img/headerbc1.png) no-repeat
+  background-size: auto
+  background-position: center center
+  width: 100%
+  height: 1250px
+  &:after
+    content: " ";
+    position: absolute
+    left: 0
+    right: 0
+    top: 860px
+    width: 100%
+    height: 516px
+    background: url(../img/waves.png) center center / cover no-repeat
+
+
+
+
+.header
+  display: flex
+  justify-content: space-between   
+
+.header__logo
+  margin-top: 86px
+  margin-left: 48px 
+  @media screen and (max-width: 1400px) 
+    width: 20%
+    height: 20%
+
+.header__number
+  background-color: rgb(20, 230, 220)
+  width: 409px
+  height: 117px
+  border-radius: 65px
+  box-shadow: 10px 0 10px rgba(0,0,0,0.1)
+  margin-right: 115px
+  margin-top: 50px
+  @media screen and (max-width: 1400px) 
+    width: 350px
+    height: 90px
+    margin-right: 100px
+    margin-top: 40px
+  h3, p
+    font-family: "Apercu Pro"
+    color: rgb(22, 81, 254)
+    line-height: 0.555
+    text-align: center
+    text-indent: 0.75px
+  h3
+    padding-top: 26px
+    font-size: 24px
+    @media screen and (max-width: 1400px)
+      padding-top: 18px
+      font-size: 20px  
+  p
+    font-size: 16px 
+    margin-top: 28px
+    @media screen and (max-width: 1400px)
+      font-size: 13px 
+      margin-top: 20px
+
+      
+
+.header__afterlogo
+  display: flex
+  justify-content: space-between
+
+.afterlogo__nav
+  ul
+    margin-top: 155px
+    margin-left: 31px
+  li
+    background-color: rgb(22, 81, 254)
+    width: 118px
+    height: 36px
+    border-radius: 30px
+    margin-top: 25px
+    padding-top: 5px
+    font-size: 13.709px
+    font-family: "Apercu Pro"
+    color: rgb(255, 255, 255)
+    text-transform: uppercase
+    line-height: 1.909
+    text-align: center
+    text-indent: 0.75px
+    list-style-image: url(../img/lineli.png)
+
+.afterlogo__success
+  border-radius: 80px
+  background-color: rgb(20, 230, 220)
+  box-shadow: 0px 22px 24px 0px rgba(0, 0, 0, 0.15)
+  width: 641px
+  height: 421px
+  margin-right: 180px
+  margin-top: 55px
+  @media screen and (max-width: 1400px) 
+    margin-right: 60px
+    margin-top: 100px
+    width: 541px
+    height: 321px
+  h1
+    font-size: 80px
+    font-family: "Apercu Pro"
+    color: rgb(22, 81, 254)
+    font-weight: bold
+    line-height: 0.75
+    text-align: left
+    text-indent: 0.75px
+    margin-top: 38px
+    margin-left: 65px
+    @media screen and (max-width: 1400px)
+      font-size: 60px
+      margin-top: 33px
+  p
+    font-size: 22px
+    font-family: "Apercu Pro"
+    color: rgb(22, 81, 254)
+    line-height: 1.628
+    text-align: left
+    margin-top: 60px
+    margin-left: 60px
+    @media screen and (max-width: 1400px)
+      font-size: 17px
+      margin-top: 40px
+
+
+.section2
+
+  position: relative
+  min-height: 100vh
+  &:before
+    content: " "
+    left: 0
+    right: 0
+    top: -580px
+    width: 1230px
+    height: 1450px
+    position: absolute
+    background: url(../img/flower1.png) left top / cover no-repeat
+    @media screen and (max-width: 1400px) 
+      top: -450px
+      width: 1030px
+      height: 1210px
+  &:after
+    content: " "
+    left: 0
+    right: 0
+    top: 370px
+    bottom: 0
+    width: 100%
+    height: 2420px
+    position: absolute
+    background: url(../img/flower2.png) right top / cover no-repeat
+    @media screen and (max-width: 1400px) 
+      top: 350px
+      width: 100%
+      height: 1800px
+
+
+.about
+  position: relative
+  display: flex
+  justify-content: center
+  z-index: 100  
+  margin-top: 200px
+  
+    
+.about__image
+  margin-right: 100px
+  position: relative
+  height: 625px
+  width: 625px
+  border-radius: 50%
+  border-left: 23px solid rgb(20, 129, 230)
+  border-top: 19px solid rgb(20, 129, 230)
+  border-bottom: 5px solid rgb(20, 129, 230)
+  border-right: 3px solid rgb(20, 129, 230)
+  
+  &:hover
+    border-left: 23px solid rgb(26, 71, 205)
+    border-top: 19px solid rgb(26, 71, 205)
+    border-bottom: 5px solid rgb(26, 71, 205)
+    border-right: 3px solid rgb(26, 71, 205)
+  
+.about__text
+  h1
+    font-size: 48px
+    font-family: "Apercu Pro"
+    color: rgb(22, 81, 254)
+    font-weight: bold
+    line-height: 1.145
+    text-align: left
+    margin-top: 40px
+    &:after
+      content: " "
+      background: url(../img/lineabout.png)
+      height: 2.5px
+      width: 25vw
+      position: absolute
+      margin-top: 30px
+      margin-left: 10px
+      @media screen and (max-width: 1400px)
+        height: 2.3px
+        width: 15vw
+  p
+    font-size: 15px
+    font-family: "Apercu Pro"
+    color: rgb(27, 27, 27)
+    line-height: 1.458
+    text-indent: 15px
+    text-align: left
+    margin-top: 90px
+    @media screen and (max-width: 1400px)
+      margin-top: 70px
+
+
+.about__button
+  display: block
+  background-color: rgb(22, 81, 254)
+  width: 298px
+  height: 102px
+  font-size: 13.722px
+  font-family: "Apercu Pro"
+  color: rgb(255, 255, 255)
+  text-transform: uppercase
+  line-height: 1.458
+  text-indent: 15px
+  text-decoration: none
+  border-radius: 65px
+  text-align: center
+  margin: 100px 0 0 0
+  padding-top: 38px
+  padding-right: 10px
+  box-shadow: 10px 5px 10px rgba(0,0,0,0.1)
+  &:hover
+    background-color: rgb(26, 71, 205)
+  @media screen and (max-width: 1400px)
+    margin: 80px 0 0 0
+    width: 268px
+    height: 80px
+    padding-top: 31px  
+    padding-right: 18px
+
+.section3
+  min-height: 100vh
+  position: relative
+
+  
+.masters__text 
+  font-size: 48px
+  font-family: "Apercu Pro"
+  color: rgb(22, 81, 254)
+  font-weight: bold
+  line-height: 1.145
+  text-align: center
+  margin-left: 452px
+  &:after
+    content: " "
+    background: url(../img/lineabout.png)
+    height: 2.5px
+    width: 32vw
+    position: absolute
+    margin-top: 30px
+    margin-left: 10px
+    @media screen and (max-width: 1400px)
+      width: 25vw
+      height: 2.3px
+
+
+325
+
+.masters
+  display: flex
+  justify-content: center
+  margin-top: 140px
+  a
+    margin-top: 150px
+
+.masters__persona
+  img
+    height: 325px
+    width: 325px
+    border-radius: 50%
+    border: 13px solid #1651fe
+    margin-left: 40px
+    margin-right: 40px
+  h3
+    font-size: 37px;
+    font-family: "Apercu Pro";
+    color: rgb(22, 81, 254);
+    font-weight: bold;
+    line-height: 1.327;
+    text-align: center;
+    text-indent: 15px;
+  p
+    font-size: 33px;
+    font-family: "Apercu Pro light"
+    color: #6986fa
+    text-align: center
+    
+.section4
+  min-height: 100vh
+  position: relative
+
+.serv
+  display: flex
+  justify-content: center
+  margin-top: 160px
+
+.serv__text
+  font-size: 48px
+  font-family: "Apercu Pro"
+  color: rgb(22, 81, 254)
+  font-weight: bold
+  line-height: 1.145
+  text-align: center
+  margin-left: 452px
+  &:after
+    content: " "
+    background: url(../img/lineabout.png)
+    height: 2.5px
+    width: 33vw
+    position: absolute
+    margin-top: 30px
+    margin-left: 10px
+    @media screen and (max-width: 1400px)
+      width: 26vw
+      height: 2.3px
+
+
+
+.serv__imageoffer1, .serv__imageoffer2, .serv__imageoffer3, .serv__imageoffer4 
+  border-radius: 50%;
+  background-color: rgb(20, 129, 230);
+  position: relative;
+  width: 237px;
+  height: 237px;
+  margin: 0 70px 
+  h3
+    margin-top: 75px
+    font-size: 19px;
+    font-family: "Apercu Pro";
+    color: rgb(22, 81, 254);
+    font-weight: bold;
+    line-height: 1.258;
+    text-align: center;
+    text-indent: 15px;
+    @media screen and (max-width: 1400px)
+      font-size: 17px
+  p
+    margin-top: 17px
+    font-size: 17px
+    font-family: "Apercu Pro light"
+    color: rgb(27, 27, 27)
+    line-height: 1.458
+    text-indent: 15px
+    text-align: center
+    @media screen and (max-width: 1400px)
+      font-size: 15px
+
+
+  @media screen and (max-width: 1400px)
+    width: 205px
+    height: 205px
+  &:after
+    position: absolute
+    border-radius: 50%;
+    background-color: rgb(22, 254, 178);
+    width: 77px;
+    height: 77px;
+    top: 160px
+    left: 180px
+    font-size: 50px;
+    font-family: "Podkova";
+    color: rgb(22, 81, 254);
+    font-weight: bold;
+    text-align: center
+    @media screen and (max-width: 1400px)
+      width: 68px
+      height: 68px
+      top: 140px
+      left: 160px
+
+.serv__imageoffer2, .serv__imageoffer3, .serv__imageoffer4
+  &:before
+    content: " "
+    position: absolute
+    background-color: rgb(20, 129, 230);
+    width: 113px;
+    height: 5px;
+    left: -125px
+    top: 100px
+    @media screen and (max-width: 1400px)
+      width: 100px
+
+        
+
+.serv__imageoffer1
+  img
+    margin: 32px 67px  
+    @media screen and (max-width: 1400px)
+      margin: 23px 56px          
+  &:after
+    content: "01"
+    
+
+.serv__imageoffer2
+  img
+    margin: 38px 51px    
+    @media screen and (max-width: 1400px)
+      margin: 33px 39px     
+  &:after
+    content: "02"  
+
+.serv__imageoffer3
+  h3
+    margin-top: 68px
+    @media screen and (max-width: 1400px)
+      margin-top: 80px
+  img
+    margin: 45px 41px    
+    @media screen and (max-width: 1400px)
+      margin: 34px 20px     
+  &:after
+    content: "03"
+    
+.serv__imageoffer4
+  h3
+    @media screen and (max-width: 1400px)
+      margin-top: 70px
+  img
+    margin: 38px 67px 
+    @media screen and (max-width: 1400px)
+      margin: 35px 55px   
+  &:after
+    content: "04"
+
+.section5
+  min-height: 80vh
+  position: relative
+
+.price__text
+  font-size: 48px
+  font-family: "Apercu Pro"
+  color: rgb(22, 81, 254)
+  font-weight: bold
+  line-height: 1.145
+  text-align: center
+  margin-left: 570px
+  &:after
+    content: " "
+    background: url(../img/lineabout.png)
+    height: 2.5px
+    width: 27vw
+    position: absolute
+    margin-top: 30px
+    margin-left: 10px
+    @media screen and (max-width: 1400px)
+      width: 18vw
+      height: 2.3px            
+    
+.price
+  border-width: 5px;
+  border-radius: 105px
+  border-color: rgb(22, 81, 254);
+  border-style: solid;
+  position: relative
+  width: 894px;
+  height: 228px;
+  margin: 160px auto
+
+  a
+    background-color: rgb(22, 81, 254);
+    border-radius: 35px
+    position: relative
+    width: 258px;
+    height: 80px;
+    font-size: 25px;
+    font-family: "Apercu Pro";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.458;
+    text-indent: 15px;
+    text-decoration: none
+    display: block
+    margin: 70px 500px
+    padding-top: 20px
+    padding-left: 33px
+    &:hover
+      background-color: rgb(26, 71, 205)
+    &:before
+      content: " "
+      position: absolute
+      background: url(../img/price.png)
+      width: 129px
+      height: 117px
+      right: 470px
+      top: -21px
+
+.section6
+  position: relative
+  min-height: 100vh
+  &:before    
+    content: " "
+    left: 0
+    right: 0
+    top: 200px
+    bottom: 0
+    width: 1524px
+    height: 2054px
+    position: absolute
+    background: url(../img/flower3.png) left top / cover no-repeat
+    @media screen and (max-width: 1400px) 
+      top: 150px
+      width: 80vw
+      height: 1450px
+
+
+
+.photo__text
+  font-size: 48px
+  font-family: "Apercu Pro"
+  color: rgb(22, 81, 254)
+  font-weight: bold
+  line-height: 1.145
+  text-align: center
+  margin-left: 422px
+  &:after
+    content: " "
+    background: url(../img/lineabout.png)
+    height: 2.5px
+    width: 35vw
+    position: absolute
+    margin-top: 30px
+    margin-left: 10px
+    @media screen and (max-width: 1400px)
+      width: 29vw
+      height: 2.3px
+
+    
+    
+.photo  
+  display: flex
+  position: relative
+  margin: 160px auto 
+  background-color: rgb(22, 81, 254);
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.2)
+  width: 1150px;
+  height: 600px;
+  img
+    height: 600px
+    width: 1000px
+
+.photo__controls
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+  
+
+.c1, .c2
+  img
+    width: 58px
+    height: 58px
+    margin-left: 43px
+  
+
+.controls__up, .controls__down
+  font-size: 67px;
+  font-family: "Podkova";
+  color: rgb(22, 254, 178);
+  font-weight: bold;
+  line-height: 0.366;
+  text-align: center;
+  text-indent: 15px;
+  margin-left: 20px
+
+.controls__up
+  margin-bottom: 45px
+  &:after
+    content: ""
+    background-color: rgb(22, 254, 178);
+    position: absolute;
+    width: 4px;
+    height: 100px;
+    margin-top: 43px
+    margin-left: -15px
+
+.section7
+  position: relative
+  height: 140vh
+  @media screen and (max-width: 1400px)
+    height: 200vh
+
+ 
+.feedback__text
+  font-size: 48px
+  font-family: "Apercu Pro"
+  color: rgb(22, 81, 254)
+  font-weight: bold
+  line-height: 1.145
+  text-align: center
+  margin-left: 452px
+  &:after
+    content: " "
+    background: url(../img/lineabout.png)
+    height: 2.5px
+    width: 32vw
+    position: absolute
+    margin-top: 30px
+    margin-left: 10px
+    @media screen and (max-width: 1400px)
+      width: 25vw
+      height: 2.3px
+
+
+
+.feedback
+  display: flex
+  flex-direction: column
+  
+
+.feedback__photo
+  display: flex
+  margin: 130px auto 0 auto
+  a
+    margin: auto
+
+.feedback__quote
+  margin: 0 auto
+  h1
+    margin-top: 80px
+    font-size: 58px;
+    font-family: "Apercu Pro";
+    color: rgb(22, 81, 254);
+    font-weight: bold;
+    line-height: 0.663;
+    text-align: left;
+    text-indent: 15px;
+  p
+    font-size: 22px;
+    font-family: "Apercu Pro";
+    color: rgb(27, 27, 27);
+    line-height: 1.458;
+    text-indent: 15px
+    margin-top: 90px
+    &:before
+      content: " "
+      background: url(../img/openquote.png) no-repeat
+      width: 77px
+      height: 56px
+      position: absolute
+      margin-left: -120px
+    &:after
+      content: " "
+      background: url(../img/closequote.png) no-repeat
+      width: 77px
+      height: 56px
+      position: absolute
+      margin-left: 450px
+      margin-top: -30px
+
+.feedback__button
+  display: block
+  background-color: rgb(22, 81, 254)
+  width: 298px
+  height: 102px
+  font-size: 13.722px
+  font-family: "Apercu Pro"
+  color: rgb(255, 255, 255)
+  text-transform: uppercase
+  line-height: 1.458
+  text-indent: 15px
+  text-decoration: none
+  border-radius: 65px
+  text-align: center
+  margin-top: 100px
+  margin-left: 500px
+  padding-top: 38px
+  padding-right: 10px
+  box-shadow: 10px 5px 10px rgba(0,0,0,0.1)
+  &:hover
+    background-color: rgb(26, 71, 205)
+  @media screen and (max-width: 1400px)
+    margin-top: 80px
+    margin-left: 500px
+    width: 268px
+    height: 80px
+    padding-top: 31px  
+    padding-right: 18px      
+
+.section8
+  position: relative
+  min-height: 44vh
+
+.contacts__text
+  font-size: 48px
+  font-family: "Apercu Pro"
+  color: rgb(22, 81, 254)
+  font-weight: bold
+  line-height: 1.145
+  text-align: left
+  margin-left: 530px
+  @media screen and (max-width: 1400px)
+    margin-left: 255px
+  &:after
+    content: " "
+    background: url(../img/lineabout.png)
+    height: 2.5px
+    width: 59vw
+    position: absolute
+    margin-top: 30px
+    margin-left: 10px
+    @media screen and (max-width: 1400px)
+      width: 63vw
+      height: 2.3px
+
+
+.contacts
+  background-color: rgb(22, 81, 254);
+  margin-top: 140px
+  width: 100%;
+  height: 351px
+
+.contacts__container
+  height: 351px
+  width: 1050px
+  display: flex
+  flex-wrap: wrap
+  margin-left: 525px
+  @media screen and (max-width: 1400px)
+    margin-left: 255px
+
+.contacts__container_1, .contacts__container_2, .contacts__container_3, .contacts__container_4  
+  height: 180px
+  width: 525px
+
+.contacts__container_1, .contacts__container_3, .contacts__container_4
+  h3
+    font-size: 38px;
+    font-family: "Apercu Pro";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.519;
+    text-align: left;
+    text-indent: 15px;
+
+.contacts__container_3, .contacts__container_4
+  p
+    font-size: 26px
+    font-family: "Apercu Pro";
+    color: rgb(255, 255, 255);
+    line-height: 1.519;
+    text-align: left;
+    text-indent: 15px;    
+
+.contacts__container_1
+  p
+    font-size: 48px
+    font-family: "Apercu Pro Light";
+    color: rgb(255, 255, 255);
+    line-height: 1.519;
+    text-align: left;
+    text-indent: 15px;     
+
+
+.contacts__container_2
+  display: flex
+  justify-content: space-around
+  margin-left: -25px
+  a
+    margin-top: 56px
+    border-radius: 25px
+    display: block
+    background-color: rgb(22, 254, 178);
+    box-shadow: 10px 5px 10px rgba(0,0,0,0.1)
+    width: 200px;
+    height: 62px;
+    font-size: 29px;
+    font-family: "Apercu Pro";
+    color: rgb(22, 81, 254);
+    font-weight: bold;
+    line-height: 0.799;
+    text-indent: 15px;
+    text-decoration: none
+    padding-top: 15px
+    padding-left: 12px
+    &:hover
+      background-color: #16d999
+
+.section9
+  min-height: 90vh
+  background: url(../img/map.png) 
+  
+
+.section10
+  height: 235px
+  width: 100%
+  background: url(../img/footer.png)  
+
+.footer
+  margin: 0 auto
+  height: 235px
+  width: 1050px
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-around
+  img
+    height: 148px
+    width: 337px
+    margin-top: 20px
+  
+.footer__about
+  h3
+    margin-top: 30px
+    font-size: 22px;
+    font-family: "Apercu Pro Light";
+    color: rgb(242, 242, 242);
+    line-height: 1.312;
+    text-indent: 15px;
+    f
+
+    
+
